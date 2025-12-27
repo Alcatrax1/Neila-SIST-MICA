@@ -1,0 +1,102 @@
+/* Importando a fonte usada no design original */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
+
+/* Configuração Geral do Container */
+.main-content {
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100vh; /* Ocupa a altura toda da tela */
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.concept {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Sombra escura ao passar o mouse no fundo (Opcional) */
+.concept:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+}
+.concept:hover:before {
+    opacity: 0.5;
+}
+
+h1 {
+    position: relative;
+    color: #fff;
+    font-weight: 900;
+    font-size: 60px; /* Tamanho do texto */
+    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 2;
+    margin: 0;
+}
+
+/* --- ESTILO A: MOUNTAINS (Letras Pulando) --- */
+.concept-five {
+    /* Troque a URL abaixo pela sua imagem de fundo */
+    background: url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/mountains.jpg") no-repeat center center / cover;
+}
+
+.concept-five .word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.concept-five .char {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    padding: 0 5px; /* Espaço entre letras */
+}
+
+/* O Pulo das letras */
+.concept-five .word:hover .char:nth-child(even) {
+    top: 20px;
+}
+.concept-five .word:hover .char:nth-child(odd) {
+    top: -20px;
+}
+
+
+/* --- ESTILO B: FOREST (Texto Transparente) --- */
+.concept-two {
+    /* Troque a URL abaixo pela sua imagem de fundo */
+    background: url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/forest.jpg") no-repeat center center / cover;
+    display: flex;
+    gap: 20px; /* Espaço entre as letras */
+}
+
+.concept-two h1 {
+    color: transparent;
+    -webkit-text-stroke: 2px #fff; /* Borda branca na letra */
+    text-shadow: none;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.concept-two .hover:hover h1 {
+    transform: scale(1.5); /* Aumenta a letra */
+    color: #fff; /* Preenche de branco */
+    -webkit-text-stroke: 2px transparent;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

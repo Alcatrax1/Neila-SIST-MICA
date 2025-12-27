@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria Sistêmica | Soluções Corporativas</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-39Q3FBL252"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-39Q3FBL252');
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'azul-calcinha': { 50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc', 900: '#0c4a6e' }
+                    },
+                    fontFamily: {
+                        sans: ['Helvetica Neue', 'Arial', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        section { scroll-margin-top: 100px; }
+
+        .hero-animation-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5vw;
+            margin-bottom: 2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-char {
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-char h1 {
+            font-size: 6rem;
+            font-weight: 900;
+            color: transparent;
+            -webkit-text-stroke: 3px rgba(255, 255, 255, 0.9);
+            margin: 0;
+            line-height: 1;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .hero-char:hover h1 {
+            color: #fff;
+            -webkit-text-stroke: 0px transparent;
+            text-shadow: 0 0 40px rgba(186, 230, 253, 0.8);
+            transform: scale(1.2) translateY(-10px);
+        }
+
+        @media (max-width: 1024px) {
+            .hero-char h1 { font-size: 4rem; -webkit-text-stroke: 2px rgba(255,255,255,0.9); }
+        }
+        @media (max-width: 640px) {
+            .hero-char h1 { font-size: 2.8rem; -webkit-text-stroke: 1.5px rgba(255,255,255,0.9); }
+            .hero-animation-container { gap: 2vw; }
+        }
+
+        .video-container {
+            position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden; border-radius: 1rem;
+        }
+        .video-container iframe, .video-container video {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-azul-calcinha-50 text-slate-700 font-sans antialiased">
+
+    <nav class="fixed w-full z-50 bg-slate-900/95 backdrop-blur-md shadow-lg border-b border-slate-700 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-azul-calcinha-200 rounded-tr-xl rounded-bl-xl flex items-center justify-center">
+                        <i class="fa-solid fa-network-wired text-azul-calcinha-900"></i>
+                    </div>
+                    <span class="font-bold text-2xl tracking-tight text-white">SISTÊMICA</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="ma.html" class="text-blue-400 hover:text-white transition font-bold text-xs lg:text-sm uppercase tracking-wide border-b border-blue-400 pb-0.5">M&A</a>
+                    
+                    <a href="#sobre" class="text-slate-300 hover:text-white transition font-medium text-xs lg:text-sm uppercase tracking-wide">Sobre</a>
+                    <a href="#metodologia" class="text-slate-300 hover:text-white transition font-medium text-xs lg:text-sm uppercase tracking-wide">Metodologia</a>
+                    <a href="#produtos" class="text-slate-300 hover:text-white transition font-medium text-xs lg:text-sm uppercase tracking-wide">Produtos</a>
+                    <a href="#ferramentas" class="text-slate-300 hover:text-white transition font-medium text-xs lg:text-sm uppercase tracking-wide">Ferramentas</a>
+                    <a href="#contato" class="ml-4 px-5 py-2 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-500 transition shadow-lg hover:shadow-blue-500/50 text-xs lg:text-sm uppercase tracking-wide">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="relative w-full h-screen min-h-screen flex items-center justify-center bg-slate-900 overflow-hidden px-4">
+        <div class="absolute inset-0 bg-[url('image_db8beb.jpg')] bg-cover bg-center opacity-40"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/60 to-slate-900/90 mix-blend-multiply"></div>
+
+        <div class="max-w-6xl mx-auto text-center relative z-10 flex flex-col items-center pt-16">
+            <div class="hero-animation-container">
+                <div class="hero-char"><h1>S</h1></div>
+                <div class="hero-char"><h1>I</h1></div>
+                <div class="hero-char"><h1>S</h1></div>
+                <div class="hero-char"><h1>T</h1></div>
+                <div class="hero-char"><h1>Ê</h1></div>
+                <div class="hero-char"><h1>M</h1></div>
+                <div class="hero-char"><h1>I</h1></div>
+                <div class="hero-char"><h1>C</h1></div>
+                <div class="hero-char"><h1>A</h1></div>
+            </div>
+            
+            <p class="mt-6 max-w-2xl mx-auto text-xl md:text-2xl text-slate-300 mb-10 font-light leading-relaxed drop-shadow-md">
+                Consultoria Corporativa de Alto Nível para Resultados Reais.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-5">
+                <a href="ma.html" class="px-8 py-4 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-1 text-lg border border-transparent">
+                    Conhecer Soluções
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-slate-500">
+            <i class="fa-solid fa-chevron-down text-2xl"></i>
+        </div>
+    </header>
+
+    <section id="sobre" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute top-0 right-0 -mr-10 -mt-10 w-64 h-64 bg-azul-calcinha-100 rounded-full opacity-50 blur-2xl"></div>
+                    <div class="absolute bottom-0 left-0 -ml-4 -mb-4 w-40 h-40 bg-azul-calcinha-200 rounded-tr-[3rem] rounded-bl-[3rem] -z-10"></div>
+                    <div class="relative rounded-tr-[5rem] rounded-bl-[5rem] overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" alt="Consultora Especialista" class="w-full h-full object-cover transform hover:scale-105 transition duration-700">
+                    </div>
+                </div>
+
+                <div>
+                    <span class="text-blue-500 font-bold tracking-widest uppercase text-sm mb-2 block">Quem Somos</span>
+                    <h2 class="text-4xl font-bold text-slate-800 mb-6 leading-tight">
+                        O fio invisível que conecta <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-azul-calcinha-900 to-blue-600">Estratégia e Pessoas.</span>
+                    </h2>
+                    <div class="w-20 h-1.5 bg-azul-calcinha-200 rounded-full mb-8"></div>
+                    <div class="space-y-6 text-lg text-slate-600 leading-relaxed font-light">
+                        <p>Nossa consultoria foi oficializada com o propósito de trazer luz às dinâmicas ocultas que governam o sucesso organizacional.</p>
+                        <p>Com uma base teórica metodológica consistente, unimos a <strong>Pedagogia Sistêmica</strong> às práticas modernas de gestão.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodologia" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-purple-400 font-bold tracking-widest uppercase text-sm">Como Trabalhamos</span>
+                <h2 class="text-4xl font-extrabold mt-2">Nossa Metodologia</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                <div class="p-6 border border-slate-700 rounded-xl hover:bg-slate-800 transition">
+                    <div class="text-5xl font-black text-slate-700 mb-4">01</div>
+                    <h3 class="text-xl font-bold text-blue-400 mb-2">Diagnóstico</h3>
+                    <p class="text-slate-400 text-sm">Entendimento profundo do cenário atual.</p>
+                </div>
+                <div class="p-6 border border-slate-700 rounded-xl hover:bg-slate-800 transition">
+                    <div class="text-5xl font-black text-slate-700 mb-4">02</div>
+                    <h3 class="text-xl font-bold text-blue-400 mb-2">Constelação</h3>
+                    <p class="text-slate-400 text-sm">Mapeamento das dinâmicas ocultas.</p>
+                </div>
+                <div class="p-6 border border-slate-700 rounded-xl hover:bg-slate-800 transition">
+                    <div class="text-5xl font-black text-slate-700 mb-4">03</div>
+                    <h3 class="text-xl font-bold text-blue-400 mb-2">Estratégia</h3>
+                    <p class="text-slate-400 text-sm">Definição de planos de ação concretos.</p>
+                </div>
+                <div class="p-6 border border-slate-700 rounded-xl hover:bg-slate-800 transition">
+                    <div class="text-5xl font-black text-slate-700 mb-4">04</div>
+                    <h3 class="text-xl font-bold text-blue-400 mb-2">Acompanhamento</h3>
+                    <p class="text-slate-400 text-sm">Sustentação das mudanças implementadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="py-24 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4 text-slate-900">NOSSOS <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">PRODUTOS</span></h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg font-light">Soluções formatadas para sua necessidade.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group p-8 rounded-2xl bg-white shadow-lg border border-slate-100 hover:border-blue-500 transition-all cursor-default">
+                    <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-blue-600"><i class="fa-solid fa-users-viewfinder text-2xl"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Mapeamento</h3>
+                    <p class="text-slate-500 text-sm">Mapeamento da complexidade das funções.</p>
+                </div>
+                <div class="group p-8 rounded-2xl bg-white shadow-lg border border-slate-100 hover:border-purple-500 transition-all cursor-default">
+                    <div class="w-14 h-14 rounded-xl bg-purple-50 flex items-center justify-center mb-6 text-purple-600"><i class="fa-solid fa-bullseye text-2xl"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Seleção</h3>
+                    <p class="text-slate-500 text-sm">Identificação de candidatos com potencial.</p>
+                </div>
+                <div class="group p-8 rounded-2xl bg-white shadow-lg border border-slate-100 hover:border-blue-500 transition-all cursor-default">
+                    <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-blue-600"><i class="fa-solid fa-medal text-2xl"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Sucessão</h3>
+                    <p class="text-slate-500 text-sm">Identificação de talentos para o futuro.</p>
+                </div>
+                <div class="group p-8 rounded-2xl bg-white shadow-lg border border-slate-100 hover:border-purple-500 transition-all cursor-default">
+                    <div class="w-14 h-14 rounded-xl bg-purple-50 flex items-center justify-center mb-6 text-purple-600"><i class="fa-solid fa-briefcase text-2xl"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Gestão</h3>
+                    <p class="text-slate-500 text-sm">Curso para colocar as pessoas certas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ferramentas" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="w-full md:w-1/2">
+                    <span class="text-blue-500 font-bold tracking-widest uppercase text-sm">Tecnologia</span>
+                    <h2 class="text-3xl font-bold text-slate-800 mt-2 mb-6">Ferramentas Exclusivas</h2>
+                    <p class="text-slate-600 mb-4">Utilizamos softwares proprietários e parceiros para garantir a precisão dos dados.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-green-500"></i>
+                            <span class="text-slate-700">Dashboard Sistêmico</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-green-500"></i>
+                            <span class="text-slate-700">Análise de Perfil Comportamental (DISC)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-green-500"></i>
+                            <span class="text-slate-700">Software de Avaliação de Desempenho</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/2 bg-slate-100 h-64 rounded-2xl flex items-center justify-center text-slate-400">
+                    <i class="fa-solid fa-laptop-code text-6xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="midia" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <i class="fa-brands fa-instagram text-4xl text-pink-500 mb-4"></i>
+                <h2 class="text-3xl font-bold text-slate-800">Insights & Conteúdo</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl p-2 shadow-sm"><div class="video-container"><video controls poster="https://via.placeholder.com/400x700/bae6fd/0c4a6e?text=Video+1" class="rounded-xl"><source src="video1.mp4" type="video/mp4"></video></div></div>
+                <div class="bg-white rounded-2xl p-2 shadow-sm"><div class="video-container"><video controls poster="https://via.placeholder.com/400x700/e0f2fe/0c4a6e?text=Video+2" class="rounded-xl"><source src="video2.mp4" type="video/mp4"></video></div></div>
+                <div class="bg-white rounded-2xl p-2 shadow-sm"><div class="video-container"><video controls poster="https://via.placeholder.com/400x700/bae6fd/0c4a6e?text=Video+3" class="rounded-xl"><source src="video3.mp4" type="video/mp4"></video></div></div>
+                <div class="bg-white rounded-2xl p-2 shadow-sm"><div class="video-container"><video controls poster="https://via.placeholder.com/400x700/e0f2fe/0c4a6e?text=Video+4" class="rounded-xl"><source src="video4.mp4" type="video/mp4"></video></div></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-slate-900 text-white pt-20 pb-10 border-t-4 border-azul-calcinha-300 relative overflow-hidden">
+        
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50"></div>
+
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h3 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Pronto para olhar para o <span class="text-blue-400">Essencial?</span></h3>
+            
+            <p class="mb-10 text-slate-300 text-lg font-light leading-relaxed">
+                Cada sistema organizacional possui uma dinâmica única. <br class="hidden md:block">
+                Permita que sua empresa encontre o fluxo e a ordem necessários para prosperar.
+            </p>
+
+            <a href="https://wa.me/554788156061" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 bg-green-600 hover:bg-green-500 text-white rounded-full font-bold transition shadow-lg hover:shadow-green-500/30 transform hover:-translate-y-1 mb-12 text-lg">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                Agendar Diagnóstico Sistêmico
+            </a>
+
+            <div class="flex justify-center items-center gap-8 mb-12 flex-wrap">
+                <a href="https://www.instagram.com/rodrigo_neila/" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center gap-2 text-slate-400 hover:text-white transition">
+                    <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-pink-600 transition duration-300 border border-slate-700 group-hover:border-pink-500">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                    </div>
+                    <span class="text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity absolute -bottom-6">Instagram</span>
+                </a>
+                
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center gap-2 text-slate-400 hover:text-white transition">
+                    <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-blue-700 transition duration-300 border border-slate-700 group-hover:border-blue-600">
+                        <i class="fa-brands fa-linkedin-in text-xl"></i>
+                    </div>
+                    <span class="text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity absolute -bottom-6">LinkedIn</span>
+                </a>
+
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pedro938493@gmail.com" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center gap-2 text-slate-400 hover:text-white transition">
+                    <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-blue-500 transition duration-300 border border-slate-700 group-hover:border-blue-400">
+                        <i class="fa-solid fa-envelope text-xl"></i>
+                    </div>
+                    <span class="text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity absolute -bottom-6">E-mail</span>
+                </a>
+            </div>
+
+            <div class="w-20 h-0.5 bg-slate-800 mx-auto mb-8"></div>
+            
+            <p class="text-xs text-slate-600 uppercase tracking-widest">&copy; 2025 Consultoria Sistêmica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
