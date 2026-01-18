@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M&A | Consultoria Sistêmica</title>
+    <title>Consultoria Sistêmica | Vitasys</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="logo-aba.png" type="image/png">
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-39Q3FBL252"></script>
     <script>
@@ -14,7 +15,8 @@
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script>
@@ -22,7 +24,14 @@
             theme: {
                 extend: {
                     colors: {
-                        'azul-calcinha': { 50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc', 900: '#0c4a6e' }
+                        brand: {
+                            dark: '#0F3D46',    
+                            main: '#00C2CB',    
+                            blue: '#2B6CB0',    
+                            light: '#E6FFFA',   
+                            50: '#f0fdfe',
+                            900: '#0c4a6e'
+                        }
                     },
                     fontFamily: {
                         sans: ['Helvetica Neue', 'Arial', 'sans-serif'],
@@ -34,145 +43,234 @@
     </script>
 
     <style>
-        html { scroll-behavior: smooth; }
+        html { 
+            scroll-behavior: smooth; 
+            scroll-padding-top: 100px; 
+        }
+        
+        section { 
+            scroll-margin-top: 100px; 
+        }
+
         .hero-pattern {
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23bae6fd' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300C2CB' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
     </style>
 </head>
-<body class="bg-azul-calcinha-50 text-slate-700 font-sans antialiased flex flex-col min-h-screen">
+<body class="font-sans text-slate-700 antialiased">
+
 <nav class="fixed w-full z-50 bg-slate-900/95 backdrop-blur-md shadow-lg border-b border-slate-700 transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <a href="#home" class="flex items-center gap-3 group"> 
-<img src="logo cortada.png" alt="Logo Vitasys" class="h-20 md:h-24 w-auto object-contain transition-transform group-hover:scale-105">             <div class="flex flex-col">
-                        <span class="text-white font-montserrat font-bold text-lg md:text-xl tracking-widest whitespace-nowrap leading-none group-hover:text-blue-400 transition-colors">VITASYS</span>
-                        <span class="text-blue-500 font-montserrat font-medium text-[0.6rem] md:text-xs tracking-[0.2em] uppercase leading-none text-right">Consultoria</span>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-24"> 
+            
+            <div class="flex-shrink-0 flex items-center">
+                <a href="index.html" class="flex items-center group hover:opacity-90 transition-opacity -ml-10 md:-ml-20"> 
+                    
+                    <img src="logo cortada.png" 
+                         alt="Logo Vitasys" 
+                         class="h-24 md:h-36 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-2xl md:-translate-y-1 relative z-10 -mr-20"> 
+                    
+                    <div class="flex flex-col justify-center">
+                        <span class="text-white font-montserrat font-black text-3xl tracking-wider leading-none">
+                            VITASYS
+                        </span>
+                        <div class="font-montserrat font-bold text-[0.7rem] uppercase tracking-[0.2em] leading-tight mt-1">
+                            <span class="text-brand-dark bg-white/10 px-1 rounded sm:bg-transparent sm:px-0 sm:text-brand-dark sm:text-slate-200">CONSULTORIA</span>
+                            <span class="text-brand-main ml-1">SISTÊMICA</span>
+                        </div>
                     </div>
                 </a>
-            </div>               </a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-8"> 
+                <a href="index.html" class="text-white font-bold text-sm uppercase tracking-wide border-b-2 border-brand-main pb-1 hover:text-brand-main transition">
+                    Início
+                </a>
+
+                <a href="#quem-somos" class="text-slate-300 hover:text-brand-main transition font-medium text-sm uppercase tracking-wide">
+                    Quem Somos
+                </a>
+
+                <a href="#servicos" class="text-slate-300 hover:text-brand-main transition font-medium text-sm uppercase tracking-wide">
+                    Serviços
+                </a>
+
+                <a href="#contato" class="ml-4 px-8 py-2.5 bg-brand-main text-white rounded-full font-bold hover:bg-brand-blue transition shadow-lg hover:shadow-brand-main/50 text-sm uppercase tracking-wide">
+                    Contato
+                </a>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 absolute w-full left-0 shadow-xl">
+        <div class="px-4 pt-4 pb-6 space-y-2 flex flex-col items-center">
+            <a href="index.html" class="block w-full text-center px-3 py-3 text-white font-bold bg-slate-800 border border-slate-700 rounded-lg uppercase tracking-wide">Início</a>
+            <a href="#quem-somos" class="block w-full text-center px-3 py-3 text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg transition font-medium uppercase tracking-wide">Quem Somos</a>
+            <a href="#servicos" class="block w-full text-center px-3 py-3 text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg transition font-medium uppercase tracking-wide">Serviços</a>
+            <a href="#contato" class="block w-full text-center mt-4 px-5 py-3 bg-brand-main text-white rounded-lg font-bold hover:bg-brand-blue uppercase tracking-wide shadow-md">Falar com Especialista</a>
+        </div>
+    </div>
+</nav>
+
+<header id="home" class="relative pt-32 pb-24 bg-slate-900 text-white overflow-hidden min-h-[60vh] flex items-center hero-pattern">
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900/95 to-brand-dark/60"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 relative z-10 w-full">
+        <div class="max-w-4xl">
+            <span class="text-brand-main font-bold tracking-widest uppercase text-sm mb-3 block">Soluções Corporativas</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-8 leading-tight">
+                Consultoria Sistêmica <br> 
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-main to-brand-light">Empresarial & Pessoal</span>
+            </h1>
+            <p class="text-slate-300 text-lg md:text-xl font-light border-l-4 border-brand-main pl-6 max-w-2xl leading-relaxed">
+                Atuamos analisando o todo, revelando conexões ocultas e desbloqueando o crescimento do seu negócio através de soluções profundas e humanas.
+            </p>
+            <div class="mt-10">
+                <a href="#quem-somos" class="inline-flex items-center gap-2 text-brand-main font-bold hover:text-white transition group">
+                    Conheça nossa abordagem 
+                    <i class="fa-solid fa-arrow-down group-hover:translate-y-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="flex-grow">
+    <section id="quem-somos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <div class="mb-20 max-w-4xl mx-auto text-center md:text-left">
+                <h2 class="text-3xl font-bold text-brand-dark mb-6 inline-block relative">
+                    Quem Somos?
+                    <div class="absolute -bottom-2 left-0 w-1/2 h-1 bg-brand-main rounded-full"></div>
+                </h2>
                 
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="index.html" class="text-slate-300 hover:text-white transition font-medium text-xs lg:text-sm uppercase tracking-wide">Início</a>
-                    <a href="#" class="text-blue-400 font-bold text-xs lg:text-sm uppercase tracking-wide border-b border-blue-400 pb-0.5">M&A</a>
-                    <a href="index.html#sobre" class="text-slate-300 hover:text-white transition font-medium text-xs lg:text-sm uppercase tracking-wide">Sobre</a>
-                    <a href="index.html#contato" class="ml-4 px-5 py-2 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-500 transition shadow-lg hover:shadow-blue-500/50 text-xs lg:text-sm uppercase tracking-wide">Contato</a>
+                <div class="space-y-6 text-lg text-slate-600 leading-relaxed text-justify md:text-left">
+                    <p>
+                        Atuamos no mercado analisando o todo dentro da empresa, revelando que cada parte (colaborador, departamento, função, produto, etc) está conectada mutuamente.
+                    </p>
+                    <p>
+                        Apontamos os problemas e conflitos repetitivos, trazendo à tona soluções inovadoras, surpreendentes, profundas e humanas. Mostramos os bloqueios invisíveis que travam o crescimento, o lucro ou ambos.
+                    </p>
+                </div>
+            </div>
+
+            <div id="servicos" class="mt-12 pt-10"> <div class="text-center mb-12">
+                    <h3 class="text-2xl font-bold text-brand-dark">Nossos Serviços</h3>
+                    <p class="text-slate-500 mt-2">Soluções integradas para sua empresa</p>
                 </div>
 
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
-                <a href="index.html" class="block px-3 py-2 text-slate-300 hover:text-white transition font-medium uppercase tracking-wide">Início</a>
-                <a href="#" class="block px-3 py-2 text-blue-400 font-bold uppercase tracking-wide">M&A</a>
-                <a href="index.html#sobre" class="block px-3 py-2 text-slate-300 hover:text-white transition font-medium uppercase tracking-wide">Sobre</a>
-                <a href="index.html#contato" class="block w-full text-center mt-4 px-5 py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 uppercase tracking-wide">Contato</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="relative pt-32 pb-20 bg-slate-900 text-white overflow-hidden min-h-[50vh] flex items-center hero-pattern">
-        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900/95 to-azul-calcinha-900/40"></div>
-        
-        <div class="max-w-7xl mx-auto px-4 relative z-10 w-full">
-            <div class="max-w-4xl">
-                <span class="text-blue-400 font-bold tracking-widest uppercase text-sm mb-2 block">Soluções Corporativas</span>
-                <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
-                    Fusões e Aquisições <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-azul-calcinha-200">Estratégicas</span>
-                </h1>
-                <p class="text-slate-300 text-xl font-light border-l-4 border-blue-600 pl-6">
-                    Estratégia sistêmica para o crescimento do seu negócio, unindo valuation preciso e visão humana.
-                </p>
-            </div>
-        </div>
-    </header>
-
-    <main class="flex-grow">
-        <section class="py-20 bg-white">
-            <div class="max-w-6xl mx-auto px-4">
-                
-                <div class="mb-16">
-                    <h2 class="text-3xl font-bold text-slate-800 mb-6">
-                        Quem Somos?
-                    </h2>
-                    <div class="h-1.5 w-24 bg-blue-600 rounded-full mb-8"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     
-                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                        Atuamos no mercado de fusões e aquisições (M&A) com uma abordagem diferenciada: unimos a precisão técnica da análise financeira com a visão sistêmica das organizações.
-                    </p>
-                    <p class="text-lg text-slate-600 leading-relaxed">
-                        Nossa equipe compreende que cada empresa possui uma "alma" e dinâmicas ocultas. Por isso, oferecemos um conjunto abrangente de serviços especializados que não olham apenas para os números, mas para a cultura e o legado envolvidos na transação.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                    <div class="bg-azul-calcinha-50 p-8 rounded-2xl hover:bg-white hover:shadow-xl border border-transparent hover:border-blue-200 transition-all duration-300 group">
-                        <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-6 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-chart-line text-2xl"></i>
+                    <div class="bg-brand-50 p-6 rounded-2xl hover:bg-white hover:shadow-xl border border-transparent hover:border-brand-main transition-all duration-300 group h-full">
+                        <div class="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center mb-4 text-brand-main group-hover:bg-brand-main group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-sitemap text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-3">Valuation Sistêmico</h3>
-                        <p class="text-slate-500 text-sm">Avaliação justa que considera ativos tangíveis e intangíveis, respeitando a história da empresa.</p>
+                        <h3 class="text-lg font-bold text-brand-dark mb-3">Mapeamento</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Mapeamento da complexidade das funções/cargos e dos colaboradores para melhor alinhamento e desempenho da organização.
+                        </p>
                     </div>
 
-                    <div class="bg-azul-calcinha-50 p-8 rounded-2xl hover:bg-white hover:shadow-xl border border-transparent hover:border-blue-200 transition-all duration-300 group">
-                        <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-6 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-handshake-simple text-2xl"></i>
+                    <div class="bg-brand-50 p-6 rounded-2xl hover:bg-white hover:shadow-xl border border-transparent hover:border-brand-main transition-all duration-300 group h-full">
+                        <div class="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center mb-4 text-brand-main group-hover:bg-brand-main group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-users-viewfinder text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-3">Buy-Side & Sell-Side</h3>
-                        <p class="text-slate-500 text-sm">Assessoria completa tanto para quem quer comprar quanto para quem deseja vender.</p>
+                        <h3 class="text-lg font-bold text-brand-dark mb-3">Processo Seletivo</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Identificação de candidatos com potencial coerente com o requerido para exercer funções necessárias estabelecidas pela organização.
+                        </p>
                     </div>
 
-                    <div class="bg-azul-calcinha-50 p-8 rounded-2xl hover:bg-white hover:shadow-xl border border-transparent hover:border-blue-200 transition-all duration-300 group">
-                        <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-6 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-magnifying-glass-chart text-2xl"></i>
+                    <div class="bg-brand-50 p-6 rounded-2xl hover:bg-white hover:shadow-xl border border-transparent hover:border-brand-main transition-all duration-300 group h-full">
+                        <div class="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center mb-4 text-brand-main group-hover:bg-brand-main group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-stairs text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-3">Due Diligence</h3>
-                        <p class="text-slate-500 text-sm">Investigação profunda de riscos financeiros, jurídicos e, crucialmente, de cultura organizacional.</p>
+                        <h3 class="text-lg font-bold text-brand-dark mb-3">Sucessão</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Analisamos os potenciais candidatos através das metodologias da Inteligência Sistêmica e da Gestão da Complexidade.
+                        </p>
                     </div>
-                </div>
 
-            </div>
-        </section>
-        
-        <section class="py-20 bg-slate-900 text-white relative overflow-hidden">
-             <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-600 rounded-full opacity-10 blur-3xl"></div>
-             <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-purple-600 rounded-full opacity-10 blur-3xl"></div>
+                    <div class="bg-brand-50 p-6 rounded-2xl hover:bg-white hover:shadow-xl border border-transparent hover:border-brand-main transition-all duration-300 group h-full">
+                        <div class="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center mb-4 text-brand-main group-hover:bg-brand-main group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-users-gear text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-dark mb-3">Relações</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Soluções humanas, profundas e transformadoras para os relacionamentos e comunicação entre colaboradores (4 pilares da Inteligência Sistêmica).
+                        </p>
+                    </div>
 
-            <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
-                <h2 class="text-3xl font-bold mb-8">Nosso Compromisso</h2>
-                <p class="text-xl max-w-3xl mx-auto font-light leading-relaxed text-slate-300 mb-10">
-                    "Conduzir transações que honrem o passado dos fundadores enquanto constroem um futuro próspero para os novos gestores."
-                </p>
-                <div>
-                    <a href="https://wa.me/554788156061" target="_blank" class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-lg transition transform hover:-translate-y-1 shadow-lg hover:shadow-blue-500/30">
-                        Falar com Especialista em M&A
-                    </a>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <footer class="bg-slate-900 text-white pt-16 pb-8 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-slate-400 mb-6">Parte do Grupo Consultoria Sistêmica</p>
-            <p class="text-xs text-slate-600 uppercase tracking-widest">&copy; 2025 Consultoria Sistêmica. Todos os direitos reservados.</p>
         </div>
-    </footer>
+    </section>
+    
+    <section id="contato" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-brand-main rounded-full opacity-10 blur-3xl"></div>
+         <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-brand-blue rounded-full opacity-10 blur-3xl"></div>
+
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <i class="fa-solid fa-handshake-angle text-5xl text-brand-main mb-6"></i>
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Nosso Compromisso</h2>
+            
+            <div class="space-y-6 text-lg md:text-xl font-light leading-relaxed text-slate-300 mb-12">
+                <p>
+                    "Estamos comprometidos em ser a sua parceria confiável em todas as etapas do processo de Consultoria."
+                </p>
+                <p class="text-base md:text-lg">
+                    Nossa abordagem única é baseada na compreensão das suas necessidades e objetivos, garantindo que nossos serviços sejam personalizados para se adequarem à sua realidade.
+                </p>
+            </div>
+
+            <div>
+                <a href="https://wa.me/77998786733" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-brand-main hover:bg-brand-dark text-white font-bold rounded-lg transition transform hover:-translate-y-1 shadow-lg hover:shadow-brand-main/30 text-lg uppercase tracking-wide">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    Falar com um Especialista
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
 <script>
-    // Script para abrir e fechar o menu no celular
     const btn = document.getElementById('mobile-menu-btn');
     const menu = document.getElementById('mobile-menu');
 
     if(btn && menu) {
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
+            const icon = btn.querySelector('i');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
         });
     }
+    
+    const menuLinks = menu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+            const icon = btn.querySelector('i');
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        });
+    });
 </script>
 </body>
 </html>
