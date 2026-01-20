@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultoria Sistêmica | Vitasys</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="logo-aba.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo-aba.png">
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-39Q3FBL252"></script>
     <script>
@@ -46,8 +46,11 @@
         html { 
             scroll-behavior: smooth; 
             scroll-padding-top: 100px; 
+            overflow-x: hidden;/
         }
-        
+        body {
+            overflow-x: hidden; 
+        }
         section { 
             scroll-margin-top: 100px; 
         }
@@ -64,18 +67,18 @@
         <div class="flex justify-between items-center h-24"> 
             
             <div class="flex-shrink-0 flex items-center">
-                <a href="index.html" class="flex items-center group hover:opacity-90 transition-opacity -ml-10 md:-ml-20"> 
+                <a href="index.html" class="flex items-center group hover:opacity-90 transition-opacity"> 
                     
                     <img src="logo cortada.png" 
                          alt="Logo Vitasys" 
-                         class="h-24 md:h-36 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-2xl md:-translate-y-1 relative z-10 -mr-20"> 
+                         class="h-8 md:h-14 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-2xl mr-4"> 
                     
                     <div class="flex flex-col justify-center">
-                        <span class="text-white font-montserrat font-black text-3xl tracking-wider leading-none">
+                        <span class="text-white font-montserrat font-black text-2xl md:text-3xl tracking-wider leading-none">
                             VITASYS
                         </span>
-                        <div class="font-montserrat font-bold text-[0.7rem] uppercase tracking-[0.2em] leading-tight mt-1">
-                            <span class="text-brand-dark bg-white/10 px-1 rounded sm:bg-transparent sm:px-0 sm:text-brand-dark sm:text-slate-200">CONSULTORIA</span>
+                        <div class="font-montserrat font-bold text-[0.65rem] md:text-[0.7rem] uppercase tracking-[0.2em] leading-tight mt-1">
+                            <span class="text-slate-200">CONSULTORIA</span>
                             <span class="text-brand-main ml-1">SISTÊMICA</span>
                         </div>
                     </div>
@@ -162,7 +165,8 @@
                 </div>
             </div>
 
-            <div id="servicos" class="mt-12 pt-10"> <div class="text-center mb-12">
+            <div id="servicos" class="mt-12 pt-10">
+                <div class="text-center mb-12">
                     <h3 class="text-2xl font-bold text-brand-dark">Nossos Serviços</h3>
                     <p class="text-slate-500 mt-2">Soluções integradas para sua empresa</p>
                 </div>
@@ -241,8 +245,6 @@
         </div>
     </section>
 </main>
-
-
 
 <script>
     const btn = document.getElementById('mobile-menu-btn');
